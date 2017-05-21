@@ -34,6 +34,17 @@ describe('=> DICTIONARY', function() {
 		done();
 	});
 
+	it('should return proper count from the Dictionary', function(done) {
+		expect(numbers.count()).to.equal(3);
+		done();
+	});
+
+	it('should sort the Dictionary', function(done) {
+		numbers.sort();
+		expect(numbers.showAll()).to.equal("Champu -> 3370123459\nRaju -> 7118780921\nZhampak -> 123991283\n");
+		done();
+	});
+
 	it('should remove a value from the Dictionary', function(done) {
 		numbers.remove("Raju");
 		expect(numbers.get("Raju")).to.equal(undefined);

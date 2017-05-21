@@ -22,6 +22,20 @@ class Dictionary {
 		return str;
 	}
 
+	sort() {
+		const sortedKeys = Object.keys(this.dataStore).sort();
+		let temp = [];
+		sortedKeys.map(key => {
+			temp[key] = this.dataStore[key];
+			return temp;
+		});
+		this.dataStore = temp;
+	}
+
+	count() {
+		return Object.keys(this.dataStore).length;
+	}
+
 	clear() {
 		this.dataStore = [];
 	}
