@@ -1,0 +1,23 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "Simple Node JS script",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node index.js",
+    "prestart": "babel index.js --out-dir dist/",
+    "start": "nodemon dist/index.js",
+    "test": "mocha --recursive",
+    "test:watch": "yarn run test -- -w"
+  },
+  "author": "Akshay Kadam <akshaykadam0904@gmail.com> (http://deadcoder0904.github.io/)",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "nodemon": "^1.11.0"
+  }
+}
