@@ -1,4 +1,6 @@
-# node-js
+# datastructure-in-js
+
+> Data Structures in JavaScript with tests in Mocha & Chai :art:
 
 ## License
 
