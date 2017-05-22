@@ -34,8 +34,8 @@ class HashTable {
 
 	showAll() {
 		let str = "";
-		for (let i = 0; i < this.table.length && this.table[i] !=undefined; i++)
-			for (let j = 0; j < this.table[i].length && this.table[i][j] !=undefined; j++)
+		for (let i = 0; i < this.table.length; i++)
+			for (let j = 0; j < this.table[i].length; j++)
 				str += i + " : " + this.table[i] + "\n";
 		return str;
 	}
